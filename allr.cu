@@ -35,7 +35,7 @@ int main() {
     }
 
     const int numRanks = 8;
-    int devices[numRanks] = {0, 1, 3, 4, 5, 6, 7};
+    int devices[numRanks] = {0, 1, 2, 3, 4, 5, 6, 7};
     std::vector<int> sizes = {4, 1<<20}; // Up to 16M floats
 
     std::ofstream csv("nccl_benchmark.csv");
